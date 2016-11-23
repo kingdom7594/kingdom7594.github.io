@@ -93,7 +93,7 @@ Hexo简介Hexo是一个快速搭建静态博客的框架,可以让我们快速�
 <meta property="og:description" content="拥有一个自己的博客那该是有意思的一件事啊，在那里面我们可以记录自己的悲欢离愁和 对生活的憧憬与感悟，特别当许多年之后慢慢细读的时候将别有一番风味。作为一个技术 人员从写博客里面可以对技术的深刻理解，当然也帮助了入门的梦想家们更快的成长，何 乐而不为！
 Hexo简介Hexo是一个快速搭建静态博客的框架,可以让我们快速搭建自己的博客，详细介绍官方文档传送门,值得骄傲的是他是中国造的轮子，台湾在校大学生">
 <meta property="og:image" content="http://theme-next.iissnan.com/uploads/five-minutes-setup/duoshuo-create-site.png">
-<meta property="og:updated_time" content="2016-11-23T01:59:15.939Z">
+<meta property="og:updated_time" content="2016-11-23T02:23:20.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Page与Hexo的联姻">
 <meta name="twitter:description" content="拥有一个自己的博客那该是有意思的一件事啊，在那里面我们可以记录自己的悲欢离愁和 对生活的憧憬与感悟，特别当许多年之后慢慢细读的时候将别有一番风味。作为一个技术 人员从写博客里面可以对技术的深刻理解，当然也帮助了入门的梦想家们更快的成长，何 乐而不为！
@@ -279,7 +279,7 @@ Hexo简介Hexo是一个快速搭建静态博客的框架,可以让我们快速�
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-23T09:59:15+08:00">
+            <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-23T10:23:20+08:00">
               2016-11-23
             </time>
 
@@ -288,7 +288,7 @@ Hexo简介Hexo是一个快速搭建静态博客的框架,可以让我们快速�
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-check-o"></i>
             </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-11-23T09:59:15+08:00">
+            <time title="Post modified" itemprop="dateModified" datetime="2016-11-23T10:23:20+08:00">
               2016-11-23
             </time>
             
@@ -339,7 +339,9 @@ Hexo简介Hexo是一个快速搭建静态博客的框架,可以让我们快速�
 <p>然后再次定位到Hexo站点目录下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure></p>
 <p>这个时候我们打开localhost:4000将会看到我们的博客界面变得十分美观了！<a href="http://theme-next.iissnan.com/uploads/five-minutes-setup/validation-default-scheme-mac.png" target="_blank" rel="external">敬请欣赏</a>。接着我们要为它集成第三方服务，在这里不一一举例，就拿文章末端的评论为例。</p>
 <h4 id="多说评论-集成第三方服务"><a href="#多说评论-集成第三方服务" class="headerlink" title="多说评论(集成第三方服务)"></a>多说评论(集成第三方服务)</h4><p>使用多说之前先到多说创建一个站点。具体步骤如下：<br>1 登陆后在首页选择“我要安装”。<br>2 创建站点，填写站点相关信息。<strong>多说域名性</strong>一栏填写的即是你的多说域名<br><img src="http://theme-next.iissnan.com/uploads/five-minutes-setup/duoshuo-create-site.png" alt=""><br>3 创建站点完成后在主题设置文件中找到 <strong>*    duoshuo_shortname</strong>将其直设置成你申请的多说域名所填入的那个字段如是那个图红色方框所示。<br>在这里有必要说一下两个设置文件了，一个是站点设置文件如上所述，另一个是<strong><em>主题配置文件</em></strong>所在路径<strong><em>/yourBlogName/themes/next/</em></strong>打开_config.yml定位到要设置的字段修改即可，此处只需定位到<strong><em>duoshuo_shortname</em></strong>为其填入你申请的多说域名即可。总的来说，要想自定义Hexo搭建的博客只需要在<strong><em>站点配置文件</em></strong>和<strong><em>主题配置文件</em></strong>中进行简单的设置即可。</p>
-<p>###发布与写作<br>终于快要写完了，也到了最激动人心的时刻了，把自己的博客部署到网上去，而不是仅仅在本地localhost上自己欣赏了。只需三步即可：<br>1 注册<a href="https://github.com" target="_blank" rel="external">Github</a>帐号<br>2 创建新的repository 仓库名Repository name 为你注册的用户名<br>3 最后打开到<strong><em>站点设置文件</em></strong>/yourBlogName目录下的_config.yml定位到</p>
+<p>###发布与写作<br>终于快要写完了，也到了最激动人心的时刻了，把自己的博客部署到网上去，而不是仅仅在本地localhost上自己欣赏了。只需三步即可：<br>1 注册<a href="https://github.com" target="_blank" rel="external">Github</a>帐号<br>2 创建新的repository 仓库名Repository name 为你注册的用户名<br>3 最后打开到<strong><em>站点设置文件</em></strong>/yourBlogName目录下的_config.yml定位到deploy字段加入如下设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">type: git //注意冒号和Git之间一定要有空格，否则会报错原因.yml语法错误</div><div class="line">repo: &lt;repository url&gt;</div></pre></td></tr></table></figure></p>
+<p>4 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo  install hexo-deployer-git --save</div><div class="line">$ hexo  generate <span class="_">-d</span>  //generate选项是保存你的设置与相关的修改 <span class="_">-d</span>选项是deploy及发布的意思这里是简写详细的写法 hexo generate &amp;&amp; hexo deploy</div></pre></td></tr></table></figure></p>
+<p>写作部分很简单，还是定位到yourBlogName目录下 hexo new “yourPostName”然后在当前目录下的/source/_posts下就会看到你新建的文章人，最后开打它开始写自己的文章，写完之后保存，然后执行如下命令就ok了：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate &amp;&amp; hexo deploy</div></pre></td></tr></table></figure></p>
 
       
     </div>
